@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .rangeslider{ 
+                width: 50%; 
+            } 
+        </style>
+
+    </head>
+    <body>
+        <input type="radio" id="heading" name="fav_language" value="heading">
+        <label for="heading">Heading</label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="Paragraph" name="fav_language" value="Paragraph">
+        <label for="Paragraph">Paragraph</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="points" name="fav_language" value="points">
+        <label for="points">points</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="h3" name="fav_language" value="h3">
+        <label for="h3">h3</label>
+        <br> <br>
+        <form>
+            <select>
+            <option value = "Arial"> Arial 
+            </option>
+            <option value = "Calibri "> Calibri  
+            </option>
+            <option value = "TimesNewRoman "> TimesNewRoman
+            </option>
+            <option value = "Italic "> Italic 
+            </option>
+            </select>
+        </form>
+
+        <br><br>
+        <div class="rangeslider"> 
+             <input type="range" min="20" max="100"  id="sliderRange">
+            <p>Font Size: <span id="demo"></span></p>
+          </div> 
+
+        <script> 
+            var rangeslider = document.getElementById("sliderRange"); 
+            var output = document.getElementById("demo"); 
+            output.innerHTML = rangeslider.value; 
+              
+            rangeslider.oninput = function() { 
+              output.innerHTML = this.value; 
+            } 
+        </script>
+        <p>
+            <form>
+                Font Color
+            <form>
+                <select>
+                <option value = "Red"> Red 
+                </option>
+                <option value = "Blue "> Blue  
+                </option>
+                <option value = "Green "> Green 
+                </option>
+                <option value = "Yellow "> Yellow 
+                </option>
+                </select>
+            </form>
+            </form>
+            
+        </p>
+        
+        <h1 id="firsthead1">This Is Heading</h1>
+        <h3 id="firsthead3">This is Third Level of Heading</h3>
+        <p>This is Paragraph 
+            <ul>
+                <li> First</li>
+                <li> Second</li>
+                <li>Third</li>
+            </ul>
+        </p>
+    </body>
+    
+
+
+
+
+
+</html>
